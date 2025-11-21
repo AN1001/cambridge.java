@@ -36,13 +36,8 @@ public class LinkedList2 {
     }
 
     //Querying the head
-    public int getHead(){
-        return this.head.getVal();
-    }
-
-    //Get nth element
-    public int getN(int n){
-        return getNElement(n).getVal();
+    public LinkedListEl getHead(){
+        return this.head;
     }
 
     //Compute length
@@ -59,7 +54,8 @@ public class LinkedList2 {
         return cur_length;
     }
 
-    private LinkedListEl getNElement(int n){
+    //Get N element
+    public LinkedListEl getN(int n){
         LinkedListEl curHead = this.head;
         while(n > 0){
             n--;
@@ -72,31 +68,4 @@ public class LinkedList2 {
         return curHead;
     }
 
-}
-class LinkedListEl {
-    private int val;
-    private LinkedListEl next = null;
-    public boolean hasNext = false;
-
-    public int getVal(){
-        return this.val;
-    }
-
-    public LinkedListEl getNext(){
-        return next;
-    }
-
-    public void removeNext(){
-        this.hasNext = false;
-        next = null;
-    }
-
-    public void setNext(LinkedListEl newNext){
-        this.next = newNext;
-        this.hasNext = true;
-    }
-
-    public LinkedListEl(int val){
-        this.val = val;
-    }
 }
