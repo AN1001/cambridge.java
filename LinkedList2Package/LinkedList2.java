@@ -7,16 +7,16 @@ public class LinkedList2 {
     public LinkedList2() {}
 
     //Add to end of LL
-    public void addEl(int val){
+    public void addEl(LinkedListEl el){
         if (this.head == null){
             //Is first element
-            this.head = new LinkedListEl(val);
+            this.head = el;
         } else {
             LinkedListEl curHead = this.head;
             while (curHead.hasNext) {
                 curHead = curHead.getNext();
             }
-            curHead.setNext(new LinkedListEl(val));
+            curHead.setNext(el);
         }
     }
 
