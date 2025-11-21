@@ -82,10 +82,6 @@ class LinkedListEl {
         return this.val;
     }
 
-    public void setVal(int newVal){
-        this.val = newVal;
-    }
-
     public LinkedListEl getNext(){
         return next;
     }
