@@ -68,4 +68,19 @@ public class LinkedList2 {
         return curHead;
     }
 
+    public boolean hasLoop(){
+        //Edge cases - no elements hence no loop or one element which means no loop
+        if(this.head == null || !this.head.hasNext){return false;}
+
+        LinkedListEl fast = this.head.getNext();
+        LinkedListEl slow = this.head;
+        while(fast.hasNext && fast.getNext().hasNext){
+            if(fast == slow){return true;}
+            fast = fast.getNext().getNext();
+            slow = slow.getNext();
+        }
+        return false;
+
+    }
+
 }
