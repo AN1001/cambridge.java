@@ -1,7 +1,7 @@
 package Stack2Package;
 import LinkedList2Package.LinkedListEl;
 
-public class Stack {
+public class Stack2 {
     private LinkedListEl head = null;
 
     //Querying the head
