@@ -8,6 +8,7 @@ import javax.swing.*;
 public class View extends JFrame{
     public View(String windowName){
         super(windowName);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(true);
     }
 
