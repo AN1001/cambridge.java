@@ -107,8 +107,6 @@ public class Board {
     }
 
     private void addActiveTile(Coordinate c) {
-        //TODO if (getTile(x, y).isDisabled()) return false;
-
         if (activeTiles.isEmpty()) {
             activeTiles.add(c);
         }

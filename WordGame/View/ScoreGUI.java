@@ -1,7 +1,5 @@
 package WordGame.View;
 
-import WordGame.Game;
-
 import javax.swing.*;
 import java.awt.*;
 

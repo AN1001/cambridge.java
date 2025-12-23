@@ -15,10 +15,6 @@ public class TileGUI extends JButton {
         setStyle(text);
     }
 
-    public JButton getComponent(){
-        return this;
-    }
-
     public void makeDeselected(){
         setForeground(Color.BLACK);
         setFont(font);

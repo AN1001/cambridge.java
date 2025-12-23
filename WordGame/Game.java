@@ -15,7 +15,7 @@ public class Game {
     private Board board;
     private BoardGUI boardGUI;
     private ScoreGUI scoreGUI;
-    private View window;
+    private final View window;
     private static final List<String> words;
     private int score = 0;
 
